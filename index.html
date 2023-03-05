@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible=" content="IE=edge" />
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet", href="style.css">
+        <title>Grad Momentum app</title>
+    </head>
+    <body>
+        <div id="top-thing">
+            <form id="login-form" class="hidden formsFont bbg">
+                <input required
+                maxlength="15"
+                type="text"
+                placeholder="이름을 입력하세요"
+                class="formsFont textInput"
+                />
+                <input type="submit" value="로그인" class="buttonInput"/>
+            </form>
+
+            <h1 id="greeting" class="hidden bbg"></h1>
+            <h2 id="clock" class="bbg">Time not found</h2>
+
+            <form id="todo-form" class="forms bbg">
+                <input required type="text" placeholder="오늘의 할 일" class="formsFont textInput" />
+            </form>
+            <ul id="todo-list" class="bbg formsFont">
+                
+            </ul>
+        </div>
+        <div id="bot-thing">
+            <!-- <form id="localName-reset" class="bbg">
+                <input type="submit" value="로컬 스토리지에서 이름 지우기" class="buttonInput"/>
+            </form>
+            <form id="localTodo-reset" class="bbg">
+                <input type="submit" value="로컬 스토리지에서 할 일 지우기" class="buttonInput"/>
+            </form> -->
+
+            <div id="quote">
+                <span></span>
+                <span></span>
+            </div>
+            <div id="weather" class="weather-container">
+                <span id="weatherC1" class="weather-child"></span>
+                <span id="weatherC2" class="weather-child"></span>
+            </div>
+        </div>
+        <script src="js/app.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+</html>
